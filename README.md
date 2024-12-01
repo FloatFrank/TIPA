@@ -3,7 +3,7 @@ Enhancing Character-Level Understanding in LLMs through Token Internal Structure
 
 Coming soon.
 
-Not later than December 1st. 
+Not later than December 15st. 
 
 ^.^ Thank you.
 
