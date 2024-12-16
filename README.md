@@ -3,8 +3,6 @@ Enhancing Character-Level Understanding in LLMs through Token Internal Structure
 
 Coming soon.
 
-Not later than December 15st. 
-
 ^.^ Thank you.
 
-Commit test.
+Email: s231231076@stu.cqupt.edu.cn
