@@ -157,10 +157,12 @@ Email: s231231076@stu.cqupt.edu.cn
 
 Cite: 
 ```
-@article{xu2024enhancing,
-  title={Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning},
-  author={Xu, Zhu and Zhao, Zhiqiang and Zhang, Zihan and Liu, Yuchi and Shen, Quanwei and Liu, Fei and Kuang, Yu},
-  journal={arXiv preprint arXiv:2411.17679},
-  year={2024}
+@misc{xu2024enhancing,
+    title={Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning},
+    author={Zhu Xu and Zhiqiang Zhao and Zihan Zhang and Yuchi Liu and Quanwei Shen and Fei Liu and Yu Kuang and Jian He and Conglin Liu},
+    year={2024},
+    eprint={2411.17679},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
 }
 ```
