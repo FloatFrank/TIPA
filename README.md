@@ -1,5 +1,6 @@
 # TIPA
-Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning
+# Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning
+![img.png](img.png)
 
 ## **TIPA Usage Documentation**
 
