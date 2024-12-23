@@ -60,7 +60,7 @@ def load(modes=None):
                 })
 
         # 保存结果到JSONL文件
-        output_path = rf"processed\cscd_{mode}_llama.jsonl"
+        output_path = rf"processed\cscd_{mode}.jsonl"
         with open(output_path, 'w', encoding='utf-8') as f:
             for item in output_data:
                 f.write(json.dumps(item, ensure_ascii=False) + '\n')
@@ -68,7 +68,7 @@ def load(modes=None):
         print("JSONL 文件已生成，路径为：", output_path)
 
         # 保存结果到JSONL文件
-        output_path = rf"processed\cscd_{mode}_llama_source_method.jsonl"
+        output_path = rf"processed\cscd_{mode}_source_method.jsonl"
         with open(output_path, 'w', encoding='utf-8') as f:
             for item in source_method:
                 f.write(json.dumps(item, ensure_ascii=False) + '\n')

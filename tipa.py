@@ -19,7 +19,7 @@ def tipa_single(string, reverse=True):
     else:
         return {str(i + 1): char for i, char in enumerate(string)}
 
-def process_and_save_jsonl(tokenizer_model="Qwen/Qwen2.5-7B-Instruct", output_file="qwen2.5_tipa_tokens.jsonl"):
+def process_and_save_jsonl(tokenizer, output_file="qwen2.5_tipa_tokens.jsonl"):
     """
     Process the tokenizer's vocabulary, compute TIPA mappings, and save results to a JSONL file.
 
@@ -28,7 +28,6 @@ def process_and_save_jsonl(tokenizer_model="Qwen/Qwen2.5-7B-Instruct", output_fi
         output_file (str): Path to the output JSONL file.
     """
     # Initialize tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_model)
     vocab = tokenizer.get_vocab()
     id2token = {v: k for k, v in vocab.items()}
 
@@ -38,7 +37,7 @@ def process_and_save_jsonl(tokenizer_model="Qwen/Qwen2.5-7B-Instruct", output_fi
             return "�" not in text.encode("utf-8", errors="strict").decode("utf-8")
         except UnicodeError:
             return False
-
+    records = []
     # Open the JSONL file for writing
     with open(output_file, 'w', encoding='utf-8') as jsonl_file:
         for token_id, token_str in id2token.items():
@@ -61,16 +60,20 @@ def process_and_save_jsonl(tokenizer_model="Qwen/Qwen2.5-7B-Instruct", output_fi
                 "tipa_reverse": tipa_reverse
             }
 
+            records.append(record)
             # Write the record as a JSON line
             jsonl_file.write(json.dumps(record, ensure_ascii=False) + '\n')
 
     print(f"TIPA mappings have been saved to {output_file}")
+    return output_file, records
 
 # Main execution
 if __name__ == "__main__":
     # Replace tokenizer_model with the desired model name
     tokenizer_name = "Qwen/Qwen2.5-7B-Instruct"
-    output_filename = "qwen2.5_tipa_tokens.jsonl"
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+
+    output_filename = "all_tipa/qwen2.5_tipa_tokens.jsonl"
 
     # Process tokenizer and save TIPA results
-    process_and_save_jsonl(tokenizer_model=tokenizer_name, output_file=output_filename)
+    process_and_save_jsonl(tokenizer=tokenizer, output_file=output_filename)

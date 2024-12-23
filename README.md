@@ -51,7 +51,7 @@ pip install numpy transformers
 
    ```python
    tokenizer_name = "Qwen/Qwen2.5-7B-Instruct"
-   output_filename = "qwen2.5_tipa_tokens.jsonl"
+   output_filename = "all_tipa/qwen2.5_tipa_tokens.jsonl"
    ```
 
 ---
@@ -110,7 +110,7 @@ To load the generated JSONL file and process the records in Python:
 ```python
 import json
 
-with open("qwen2.5_tipa_tokens.jsonl", "r", encoding="utf-8") as f:
+with open("all_tipa/qwen2.5_tipa_tokens.jsonl", "r", encoding="utf-8") as f:
    for line in f:
       record = json.loads(line)
       print(record)
