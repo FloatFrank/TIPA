@@ -153,10 +153,10 @@ For any additional questions or support, refer to the HuggingFace documentation 
 
 Email: s231231076@stu.cqupt.edu.cn
 
-Model:
-[MTIPAE1](https://huggingface.co/LLMMINE/MTIPA-7B-PositionTask) | [TIPAE2](https://huggingface.co/LLMMINE/TIPA-7B-TranditionalTask)
+Huggingface Models:
+[**MTIPA-E1**](https://huggingface.co/LLMMINE/MTIPA-7B-PositionTask) | [**TIPA-E2**](https://huggingface.co/LLMMINE/TIPA-7B-TranditionalTask)
 
-[\[Paper\]](https://arxiv.org/abs/2411.17679)
+[\[**Paper**\]](https://arxiv.org/abs/2411.17679)
 
 Cite: 
 ```
