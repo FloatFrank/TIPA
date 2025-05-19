@@ -2,6 +2,21 @@
 # Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning
 ![img.png](img.png)
 
+# 📄 Our Paper Has Been Accepted by ACL 2025! 🎉
+
+**🎉 Exciting News!**  
+We are thrilled to announce that our paper has been accepted as a **long paper** at the **ACL 2025 Main Conference**! 🌟
+
+### 📌 Key Details:
+- **Conference**: [ACL 2025](https://acl2025.org/) (Annual Meeting of the Association for Computational Linguistics)  
+- **Track**: Main Conference (Long Paper)  
+- **Category**: 🏆 Top-tier NLP conference  
+
+### 🙏 Acknowledgments:  
+A huge thanks to all co-authors, reviewers, and the ACL community for their valuable feedback! 🤝  
+
+Stay tuned for the camera-ready version! 📢  
+
 ## **TIPA Usage Documentation**
 
 ---
