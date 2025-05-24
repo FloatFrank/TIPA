@@ -4,6 +4,8 @@
 
 # 📄 Our Paper Has Been Accepted by ACL 2025! 🎉
 
+**All code and datasets will be reorganized and open sourced. Looking forward to it! Thank you for your attention to this work!**
+
 **🎉 Exciting News!**  
 We are thrilled to announce that our paper has been accepted as a **long paper** at the **ACL 2025 Main Conference**! 🌟
 
