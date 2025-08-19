@@ -177,12 +177,30 @@ Huggingface Models:
 
 Cite: 
 ```
-@misc{xu2024enhancing,
-    title={Enhancing Character-Level Understanding in LLMs through Token Internal Structure Learning},
-    author={Zhu Xu and Zhiqiang Zhao and Zihan Zhang and Yuchi Liu and Quanwei Shen and Fei Liu and Yu Kuang and Jian He and Conglin Liu},
-    year={2024},
-    eprint={2411.17679},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{xu-etal-2025-enhancing-character,
+    title = "Enhancing Character-Level Understanding in {LLM}s through Token Internal Structure Learning",
+    author = "Xu, Zhu  and
+      Zhao, Zhiqiang  and
+      Zhang, Zihan  and
+      Liu, Yuchi  and
+      Shen, Quanwei  and
+      Liu, Fei  and
+      Kuang, Yu  and
+      He, Jian  and
+      Liu, Conglin",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.194/",
+    doi = "10.18653/v1/2025.acl-long.194",
+    pages = "3839--3853",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Tokenization methods like Byte-Pair Encoding (BPE) enhance computational efficiency in large language models (LLMs) but often obscure internal character structures within tokens. This limitation hinders LLMs' ability to predict precise character positions, which is crucial in tasks like Chinese Spelling Correction (CSC) where identifying the positions of misspelled characters accelerates correction processes. We propose Token Internal Position Awareness (TIPA), a method that significantly improves models' ability to capture character positions within tokens by training them on reverse character prediction tasks using the tokenizer{'}s vocabulary. Experiments demonstrate that TIPA enhances position prediction accuracy in LLMs, enabling more precise identification of target characters in original text. Furthermore, when applied to downstream tasks that do not require exact position prediction, TIPA still boosts performance in tasks needing character-level information, validating its versatility and effectiveness."
 }
 ```
